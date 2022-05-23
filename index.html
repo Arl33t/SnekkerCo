@@ -14,21 +14,35 @@
 <body>
 
     <header>
-        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark py-xl-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">SnekkerCO</a>
+                <a class="navbar-brand link-warning" href="#">SnekkerCO</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="main_nav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about"> Om Oss </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services"> Tenester </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact"> Kontakt </a></li>
+                        <li class="nav-item"><a class="nav-link link-warning" href="#about"> Om Oss </a></li>
+                        <li class="nav-item"><a class="nav-link link-warning" href="#services"> Tenester </a></li>
+                        <li class="nav-item"><a class="nav-link link-warning" href="#contact"> Kontakt </a></li>
                     </ul>
                 </div> <!-- navbar-collapse.// -->
             </div> <!-- container-fluid.// -->
         </nav>
+
+        <div class="container-fluid p-0" id="parallax">
+            <div id="carouselID" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/carpentry1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/carpentry2.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+
     </header>
 
     <div class="container border">
@@ -58,6 +72,14 @@
     <div class="container border" style="height: 1000px;">
         <div class="row">
             <h1 id="contact">Kontakt Oss</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-3">
+                <img src="images/headshot.png" class="img-fluid img-thumbnail rounded" alt="...">
+            </div>
+            <div class="col-6 col-md-3">
+                <img src="images/headshot.png" class="img-thumbnail img-fluid rounded" alt="...">
+            </div>
         </div>
         <div class="row">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
