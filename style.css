@@ -1,0 +1,13 @@
+.centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+
+.anchor {
+    position: absolute;
+    transform: translateY(-50vh);
+}

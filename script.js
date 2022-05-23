@@ -15,3 +15,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
   }); 
   // DOMContentLoaded  end
+
+// $(document).ready(function() {
+//   $('.carousel').carousel({interval: 4000});
+// });

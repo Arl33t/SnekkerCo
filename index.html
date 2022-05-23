@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>SnekkerCo</title>
 </head>
@@ -30,62 +30,85 @@
             </div> <!-- container-fluid.// -->
         </nav>
 
-        <div class="container-fluid p-0" id="parallax">
+        <div class="container-fluid p-0 overflow-hidden">
             <div id="carouselID" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/carpentry1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/carpentry2.jpg" class="d-block w-100" alt="...">
-              </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                    <img src="images/carpentry1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/carpentry2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                    <img src="images/carpentry3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <div class="centered">
+                    <h1>SnekkerCo</h1>
+                </div>
             </div>
-          </div>
         </div>
 
     </header>
 
-    <div class="container border">
-        <div class="row">
-            <h1 id="about">Om oss</h1>
-        </div>
-        <div class="row">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quam recusandae sint modi quidem esse ad totam illum provident, nostrum amet! 
-                Fugiat perspiciatis nulla impedit tempora eligendi necessitatibus sequi! Soluta, quia.
-            </p>
-        </div>
-    </div>
-
-    <div class="container border">
-        <div class="row">
-            <h1 id="services">Våre Tenester</h1>
-        </div>
-        <div class="row">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quam recusandae sint modi quidem esse ad totam illum provident, nostrum amet! 
-                Fugiat perspiciatis nulla impedit tempora eligendi necessitatibus sequi! Soluta, quia.
-            </p>
-        </div>
-    </div>
-
-    <div class="container border" style="height: 1000px;">
-        <div class="row">
-            <h1 id="contact">Kontakt Oss</h1>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-6 col-md-3">
-                <img src="images/headshot.png" class="img-fluid img-thumbnail rounded" alt="...">
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <span class="anchor" id="about"></span>
+                <h1>Om oss</h1>
             </div>
-            <div class="col-6 col-md-3">
-                <img src="images/headshot.png" class="img-thumbnail img-fluid rounded" alt="...">
+            <div class="row">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quam recusandae sint modi quidem esse ad totam illum provident, nostrum amet! 
+                    Fugiat perspiciatis nulla impedit tempora eligendi necessitatibus sequi! Soluta, quia.
+                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo laudantium eius nostrum, 
+                    consequuntur optio magnam, sequi quisquam enim, sit unde corrupti expedita quod dolorem provident aliquam natus rem tenetur velit?
+                </p>
             </div>
         </div>
-        <div class="row">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quam recusandae sint modi quidem esse ad totam illum provident, nostrum amet! 
-                Fugiat perspiciatis nulla impedit tempora eligendi necessitatibus sequi! Soluta, quia.
-            </p>
+    </div>
+    <div class="container-fluid py-5" style="background-color: whitesmoke;">
+        <div class="container">
+            <div class="row">
+                <span class="anchor" id="services"></span>
+                <h1>Våre Tenester</h1>
+            </div>
+            <div class="row">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quam recusandae sint modi quidem esse ad totam illum provident, nostrum amet! 
+                    Fugiat perspiciatis nulla impedit tempora eligendi necessitatibus sequi! Soluta, quia.
+                </p>
+            </div>
+            <div class="row">
+                <ul>
+                    <li>Stuff</li>
+                    <li>Things</li>
+                    <li>Other</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <span class="anchor" id="contact"></span>
+                <h1 id="contact">Kontakt Oss</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-3">
+                    <img src="images/headshot.png" class="img-fluid img-thumbnail rounded" alt="...">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="images/headshot.png" class="img-thumbnail img-fluid rounded" alt="...">
+                </div>
+            </div>
+            <div class="row">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quam recusandae sint modi quidem esse ad totam illum provident, nostrum amet! 
+                    Fugiat perspiciatis nulla impedit tempora eligendi necessitatibus sequi! Soluta, quia.
+                </p>
+            </div>
         </div>
     </div>
 </body>
