@@ -12,7 +12,7 @@
     <title>SnekkerCo</title>
 </head>
 <body>
-
+<!-- HEADER START -->
     <header>
         <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark py-xl-3">
             <div class="container-fluid">
@@ -48,9 +48,10 @@
                 </div>
             </div>
         </div>
-
     </header>
+<!-- HEADER END -->
 
+<!-- ABOUT START -->
     <div class="container-fluid py-5" style="background-color: black; color:orange">
         <div class="container">
             <div class="row">
@@ -74,6 +75,9 @@
             
         </div>
     </div>
+<!-- ABOUT END -->
+
+<!-- SERVICES START -->
     <div class="container-fluid py-5" style="background-color: rgb(20, 20, 20); color:orange"">
         <div class="container">
             <div class="row">
@@ -93,8 +97,51 @@
                     <li>Other</li>
                 </ul>
             </div>
+            <div class="row">
+                <div id="carouselServices" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/carpentry3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/carpentry2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/carpentry1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselServices" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselServices" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
+<!-- SERVICES END -->
+
+<!-- CONTACT START -->
     <div class="container-fluid py-5" style="background-color: black; color:orange">
         <div class="container">
             <div class="row">
@@ -115,7 +162,47 @@
                     Fugiat perspiciatis nulla impedit tempora eligendi necessitatibus sequi! Soluta, quia.
                 </p>
             </div>
+            <div class="row py-3 my-3 rounded" style="background-color: rgb(49, 49, 49);">
+                <div class="col-sm">
+                    <h2>Send ei melding</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactForm">Namn</label>
+                            <input type="text" class="form-control" id="contactForm" aria-describedby="nameText">
+                            <div id="nameText" class="form-text" style="color: rgba(255, 166, 0, 0.5);">Obligatorisk</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactForm">E-post</label>
+                            <input type="email" class="form-control" id="contactForm" aria-describedby="emailText">
+                            <div id="emailText" class="form-text" style="color: rgba(255, 166, 0, 0.5);">Obligatorisk</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactForm">Emne</label>
+                            <input type="text" class="form-control" id="contactForm">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactForm">Melding</label>
+                            <textarea class="form-control" id="contactForm" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Send</button>
+                    </form>                    
+                </div>
+                <div class="col-sm" id="contactInfo">
+                    <h2>Vår kontaktinfo</h2>
+                    <h4>Telefon: </h4> 
+                    <p>99999999</p>
+                    <h4>E-post</h4>
+                    <p>fart@shit.cum</p>
+                    <h4>Åpningstider:</h4>
+                    <p>24/7</p>
+                    <h4>Organisasjonsnummer:</h4>
+                    <p>69696969</p>
+                    <h4>Adresse:</h4>
+                    <p>Huset til Chris</p>
+                </div>
+            </div>
         </div>
     </div>
+<!-- CONTACT END -->
 </body>
 </html>

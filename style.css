@@ -11,3 +11,17 @@
     position: absolute;
     transform: translateY(-50vh);
 }
+
+#carouselServices h5 {
+  color: orange;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.carousel-item p {
+  color: orange;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#contactInfo p {
+  color: rgba(255, 166, 0, 0.75);
+}
