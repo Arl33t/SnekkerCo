@@ -167,22 +167,26 @@
                     <h2>Send ei melding</h2>
                     <form>
                         <div class="mb-3">
-                            <label for="contactForm">Namn</label>
-                            <input type="text" class="form-control" id="contactForm" aria-describedby="nameText">
+                            <label for="contactFormName">Namn</label>
+                            <input type="text" class="form-control" id="contactFormName" aria-describedby="nameText">
                             <div id="nameText" class="form-text" style="color: rgba(255, 166, 0, 0.5);">Obligatorisk</div>
                         </div>
                         <div class="mb-3">
-                            <label for="contactForm">E-post</label>
-                            <input type="email" class="form-control" id="contactForm" aria-describedby="emailText">
+                            <label for="contactFormEmail">E-post</label>
+                            <input type="email" class="form-control" id="contactFormEmail" aria-describedby="emailText">
                             <div id="emailText" class="form-text" style="color: rgba(255, 166, 0, 0.5);">Obligatorisk</div>
                         </div>
                         <div class="mb-3">
-                            <label for="contactForm">Emne</label>
-                            <input type="text" class="form-control" id="contactForm">
+                            <label for="contactFormSubject">Emne</label>
+                            <input type="text" class="form-control" id="contactFormSubject">
                         </div>
                         <div class="mb-3">
-                            <label for="contactForm">Melding</label>
-                            <textarea class="form-control" id="contactForm" rows="3"></textarea>
+                            <label for="contactFormMessage">Melding</label>
+                            <textarea class="form-control" id="contactFormMessage" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactFormAttachment">Vedlegg</label>
+                            <input type="file" class="form-control" id="contactFormAttachment">
                         </div>
                         <button type="submit" class="btn btn-warning mb-3">Send</button>
                     </form>                    
@@ -219,7 +223,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" id="footerCredits">
+        <div class="container-fluid" id="footerCredits" style="color: black;">
             Utvikla av Arle Farsund Solheim
         </div>
     </footer>
