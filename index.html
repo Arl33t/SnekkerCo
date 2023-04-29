@@ -176,29 +176,31 @@
             </div>
             <div class="row py-3 my-3 rounded" style="background-color: rgb(49, 49, 49);">
                 <div class="col-sm">
-                    <h2>Send ei melding</h2>
-                    <form>
+                    <h2>Send oss ei melding</h2>
+                    <form id="contactForm">
                         <div class="mb-3">
-                            <label for="contactFormName">Namn</label>
-                            <input type="text" class="form-control" id="contactFormName" aria-describedby="nameText">
-                            <div id="nameText" class="form-text" style="color: rgba(255, 166, 0, 0.5);">Obligatorisk</div>
+                            <label for="contactFormName" class="form-label">Namn<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="contactFormName" aria-describedby="nameText" required>
+                            <div id="nameText" class="form-text" style="color: rgba(255, 166, 0, 0.5);">*Obligatorisk</div>
                         </div>
                         <div class="mb-3">
-                            <label for="contactFormEmail">E-post</label>
+                            <label for="contactFormEmail" class="form-label">E-post<span class="required">*</span></label>
                             <input type="email" class="form-control" id="contactFormEmail" aria-describedby="emailText">
-                            <div id="emailText" class="form-text" style="color: rgba(255, 166, 0, 0.5);">Obligatorisk</div>
+                            <div id="emailText" class="form-text" style="color: rgba(255, 166, 0, 0.5);">*Obligatorisk</div>
                         </div>
                         <div class="mb-3">
-                            <label for="contactFormSubject">Emne</label>
+                            <label for="contactFormSubject" class="form-label">Emne</label>
                             <input type="text" class="form-control" id="contactFormSubject">
                         </div>
                         <div class="mb-3">
-                            <label for="contactFormMessage">Melding</label>
+                            <label for="contactFormMessage" class="form-label">Melding</label>
                             <textarea class="form-control" id="contactFormMessage" rows="3"></textarea>
                         </div>
                         <div class="mb-3">
                             <label for="contactFormAttachment">Vedlegg</label>
-                            <input type="file" class="form-control" id="contactFormAttachment">
+                            <input type="file" class="form-control" id="contactFormAttachment" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg" max-size="5000000">
+                            <div id="attachmentText" class="form-text" style="color: rgba(255, 166, 0, 0.5);">Maks storleik på filer er 5 MB. Kun PDF, PNG, JPG, JPEG, og Word-dokumenter er tillaten.</div>
+                            <div id="contactFormSuccess" class="alert alert-success d-none">Takk for di henvending! Vi kontaktar deg så snart som mogleg.</div> <!--test om denne funkar-->
                         </div>
                         <button type="submit" class="btn btn-warning mb-3">Send</button>
                     </form>                    
